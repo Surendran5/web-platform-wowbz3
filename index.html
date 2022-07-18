@@ -6,18 +6,43 @@
     <title>JavaScript object</title>
   </head>
   <body>
-    <h1>javascript object</h1>
+    <h1>javascript object- object literals</h1>
     <script>
-      let obj = {
-        input1: 5,
+      // let obj = {
+      //   input1: 5,
+      //   input2: 5,
+      // };
+      // console.log(obj.input1 + obj.input2); //Add
+      // console.log(obj.input1 * obj.input2); //mul
+      // console.log(obj.input1 / obj.input2); //div
+      // console.log(obj.input1 - obj.input2); //sub
+      // console.log(Math.pow(obj.input1, obj.input2)); //power
+      const calculator = {
+        input1: 6,
         input2: 5,
+        sum: function () {
+          console.log(calculator.input1 + calculator.input2);
+        },
+        mul: function () {
+          console.log(calculator.input1 * calculator.input2);
+        },
+        div: function () {
+          console.log(calculator.input1 / calculator.input2);
+        },
+        sub: function () {
+          console.log(calculator.input1 - calculator.input2);
+        },
+        power: function () {
+          console.log(Math.pow(calculator.input1, calculator.input2));
+        },
       };
-      console.log(obj.input1 + obj.input2); //Add
-      console.log(obj.input1 * obj.input2); //mul
-      console.log(obj.input1 / obj.input2); //div
-      console.log(obj.input1 - obj.input2); //sub
-      console.log(Math.pow(obj.input1, obj.input2)); //power
+      calculator.sum();
+      calculator.mul();
+      calculator.div();
+      calculator.sub();
+      calculator.power();
     </script>
   </body>
 </html>
+
 
